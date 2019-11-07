@@ -49,7 +49,7 @@ html {
   flex-direction: column;
   height: 500px;
   padding: 20px 0 40px;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 .app .list__person {
   display: flex;
@@ -85,9 +85,19 @@ html {
 .app .list__person .person__networth span {
   font-size: 15px;
 }
-.app .list__person:hover {
+/* .app .list__person:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+} */
+.app .list__person:first-child{
+  position: absolute;
+  background: white;
+  z-index: 10;
+  transform: scale(1.2);
+  max-height: 54px;
+}
+.app .list__person:nth-child(2){
+  margin-top: 8vw;
 }
 .app .list::-webkit-scrollbar {
   width: 12px;
