@@ -49,7 +49,7 @@ html {
   flex-direction: column;
   height: 500px;
   padding: 20px 0 40px;
-  overflow: scroll;
+  overflow: hidden;
 }
 .app .list__person {
   display: flex;
